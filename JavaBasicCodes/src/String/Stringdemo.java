@@ -13,13 +13,84 @@ public class Stringdemo {
 	    //sd.learning_7();//stripleading()
 	    //sd.learning_8();//striptrailing
 	    //sd.learning_9();//trim
-		sd.learning_10();//contains
+		//sd.learning_10();//contains
+		//sd.learning_11();//remove unwanted space
+		//sd.learning_12();//assigning un order array to order array(assending)
+		//sd.learning_13();//
+		//sd.learning_14();
+		int result=sd.fact(4);
+		System.out.println(result);
+	}
+	
+	private int fact(int no) {
+		if(no==1)
+		return no;
+		else
+			return no*fact(no-1);
+	}
+
+
+	private void learning_14() {
+		// TODO Auto-generated method stub
+		String s="A5";
+		char letter=s.charAt(0);
+		char num=s.charAt(1);
+		for(char i='1';i<=num;i++) {
+			System.out.println(letter);
+		}
+	}
+
+	private void learning_13() {
+		// TODO Auto-generated method stub
+		int no=5;
+		String total="";
+		while(no>=1) {
+			int rem=no%2;
+			total=total+rem;
+			no=no/2;
+		}
+		System.out.println(total);
+	}
+
+	private void learning_12() {
+		int no[]= {18,10,3,19,7,22,14,23};
+		for(int i=0,j=0;i<no.length;i++) {
+			if(no[i]<=15) {
+				int temp=no[i];
+				no[i]=no[j];
+				no[j]=temp;
+				j++;
+			}
+		}
+			for(int i=0;i<no.length;i++) {
+				System.out.print(no[i]+" ");
+			}
+		}
+
+	private void learning_11() {
+				String s="how      are        you";
+				for(int i=0;i<s.length();i++) {
+					if(s.charAt(i)!=' ')
+						System.out.print(s.charAt(i));
+					else {
+						System.out.print(s.charAt(i));
+						for(int j=i;j<s.length();j++) {
+							if(s.charAt(j)==' ') {
+								continue;
+							}
+							else {
+								i=j-1;
+								break;
+							}
+						}
+					}
+				}
 	}
 
 	private void learning_10() {
 		// TODO Auto-generated method stub
 		String s1="today is thursday";
-		String s2="day";
+		String s2="tay";
 		for(int i=0;i<s1.length();i++) {
 			if(s2.charAt(0)==s1.charAt(i)) {
 				int count=0;

@@ -351,6 +351,7 @@ char []name= {'s','h','e','i','k','m','o','h','a','m','m','e','d'};
 		//System.out.println(mark[4]);
 		//for(int i=0;i<mark.length;i++) {
 			//System.out.println(mark[i]);
+		
 }
 
 	}
